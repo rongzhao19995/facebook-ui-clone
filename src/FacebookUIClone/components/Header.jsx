@@ -3,8 +3,8 @@ import { ReactComponent as FacebookLogo } from "../assets/icons/svg/facebook.svg
 import Search from "./Search";
 import SVG from "react-inlinesvg";
 import { HiPlus } from 'react-icons/hi';
-import { FaFacebookMessenger } from 'react-icons/fa';
 import { TiArrowSortedDown } from 'react-icons/ti';
+import { HeaderOptionGroup } from "./HeaderOptionGroup";
 
 const HeaderLeft = () => {
   return (
@@ -18,40 +18,9 @@ const HeaderLeft = () => {
 const HeaderCenter = () => {
   return (
     <div className="header__center">
-      <div className="items-container">
-        <div className="items-container__item">
-          <div className="item-box">
-            <SVG src={require("../assets/icons/svg/home.svg")} />
-            <div className="items-container__tooltips">Home</div>
-          </div>
-        </div>
-        <div className="items-container__item">
-          <div className="item-box">
-            <SVG src={require("../assets/icons/svg/watch.svg")} />
-            <div className="items-container__tooltips">Watch</div>
-          </div>
-        </div>
-        <div className="items-container__item">
-          <div className="item-box">
-            <SVG src={require("../assets/icons/svg/market.svg")} />
-            <div className="items-container__tooltips">Market</div>
-          </div>
-        </div>
-        <div className="items-container__item">
-          <div className="item-box">
-            <SVG src={require("../assets/icons/svg/group.svg")} />
-            <div className="items-container__tooltips">Group</div>
-          </div>
-        </div>
-        <div className="items-container__item">
-          <div className="item-box">
-            <SVG src={require("../assets/icons/svg/gaming.svg")} />
-            <div className="items-container__tooltips">Gaming</div>
-          </div>
-        </div>
-      </div>
+      <HeaderOptionGroup />
     </div>
-  );
+  );  
 };
 
 const HeaderRight = () => {
