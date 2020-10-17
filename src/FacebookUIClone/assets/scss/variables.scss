@@ -1,0 +1,50 @@
+// Color 
+$white :#FFFFFF;
+$white-grey :rgb(240, 242, 245);
+$white-grey-2 :rgb(206, 207, 209);
+$red: #e24040;
+$black: black;
+$blue-light: #1877f2;
+
+
+// Media Querie Break Points
+
+// Small phones
+$screen-tn-max: 450px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 596px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Phone devices
+@mixin tn {
+  @media (max-width: #{$screen-tn-max}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
