@@ -159,14 +159,15 @@ body {
       justify-content: center;
       align-items: flex-start;
       border-bottom: 1px solid #bbb;
-      margin: 1.25rem 0 0 2rem; }
+      margin: 1.25rem 0 0 1rem; }
       .content__left .item-container__item-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         cursor: pointer;
-        padding: .25rem 0 1rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
         border-radius: 5px 0px 0px 5px;
         width: 99%;
         transition: all 0.4s; }
@@ -186,7 +187,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      margin: 1.25rem 0 0 2rem; }
+      margin: 1.25rem 0 0 1rem; }
       .content__left .shortcut-container__header {
         display: flex;
         flex-direction: row;
@@ -215,7 +216,8 @@ body {
         align-items: center;
         border-radius: 20px;
         cursor: pointer;
-        padding: .25rem 0 1rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
         border-radius: 5px 0px 0px 5px;
         width: 99%;
         transition: all 0.4s; }
