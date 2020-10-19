@@ -1,8 +1,11 @@
 .header {
+    position:fixed;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 25% 50% 25%;
     background-color: $white;
-    
+    width:100%;
+    z-index:1;
+
     &__left {
         display: flex;
         flex-direction: row;
