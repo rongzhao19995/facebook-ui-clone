@@ -1,12 +1,14 @@
 .content {
-    padding-top:60px;
+    // padding-top:60px;
+    height:100vh;
     display:grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 25% 52% 23%;
 
     &__left {
         height: 100vh;
         overflow: hidden;
         overflow-y: scroll;
+        padding-bottom: 100px;
 
         .item-container {
             display:flex;
@@ -38,7 +40,14 @@
                 &__name {
                     font-weight: 600;
                     font-size: 14px;
-                    padding: 1rem;
+                    padding: 0.5rem 1rem;
+                }
+                &__notification {
+                    padding:.25rem;
+                    display:table-cell;
+                    color: $accent;
+                    font-size: 12px;
+                    font-weight:400;
                 }
     
                 &:hover {
@@ -106,7 +115,7 @@
                 &__name {
                     font-weight: 600;
                     font-size: 14px;
-                    padding: 1rem;
+                    padding: 0.5rem 1rem;
                 }
     
                 &:hover {
@@ -126,5 +135,299 @@
 
     &__center {}
     
-    &__right {}
+    &__right {
+        padding-right:1.5rem;
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding-bottom: 100px;
+
+        .friends-req-container {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border-bottom: 1px solid #bbb;
+            margin: 1.25rem 0 0 1rem;
+
+            &__header {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                &--text-wrapper {
+                    font-size:17px;
+                    font-weight:600;
+                    color: $secondary-text;
+                }
+
+                &--edit-wrapper {
+                    font-size:15px;
+                    font-weight:400;
+                    color: $accent;
+                    cursor: pointer;
+                    border-radius:5px;
+                    padding:1rem;
+                    opacity: 1;
+
+                    &:hover {
+                        opacity: 1;
+                        background-color:$white-grey-2;
+                    }
+                }
+            }
+
+            &__item-wrapper {
+                display:flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                border-radius: 20px;
+                cursor: pointer;
+                padding: 0.5rem;
+                margin-bottom: 0.5rem;
+                border-radius: 5px 5px 5px 5px;
+                width:99%;
+                transition:all 0.4s;
+
+                &__avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 40px;
+                    margin-left: .25rem;
+                }
+    
+                &__info-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    width: 100%;
+
+                    &__top-section {
+                        width: inherit;
+                        display:grid;
+                        grid-template-columns: 80% 20%;
+
+                        &__name {
+                            text-align: left;
+                            font-weight: 600;
+                            font-size: 14px;
+                            padding: 0rem 1rem;
+                        }
+                        
+                        &__week {
+                            text-align: right;
+                            font-weight: 600;
+                            font-size: 14px;
+                            color:$secondary-text;
+                            padding: 0rem 1rem;
+                        }
+
+                    }
+
+                    &__btm-section {
+                        width: inherit;
+                        display:grid;
+                        grid-template-columns: 1fr 1fr;
+                        &__cfm {                            
+                            background-color:$--primary-button-background;
+                            color: $white;
+                            margin: 1rem;
+                            padding:1rem 2rem;
+                            outline: none;
+                            border: none;
+                            border-radius:5px;
+                        }
+
+                        &__delete {
+                            background-color:$white-grey-2 ;
+                            color: $black;
+                            margin: 1rem;
+                            padding:1rem 2rem;
+                            outline: none;
+                            border: none;
+                            border-radius:5px;
+                        }
+                    }
+                }
+    
+                &:hover {
+                    background-color: $white-grey-2;
+                }
+
+            }
+
+        }
+
+        .friends-birth-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border-bottom: 1px solid #bbb;
+            margin: 1.25rem 0 0 1rem;
+
+            &__header {
+
+                &__text-wrapper {
+                    font-size:17px;
+                    font-weight:600;
+                    color: $secondary-text;
+                }
+                
+            }
+
+            &__item-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                padding: 2rem 0rem;
+
+                &__icon {
+                    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/CkM-umrun3d.png);
+                    background-size: 37px 243px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+
+                    height: 36px;
+                    width: 36px;
+                }
+
+                &__text {
+                    padding-left: 2rem;
+                    text-align: left;
+
+                    span {
+                        font-size:15px;
+                        // font-weight:600;
+                    }
+
+                }
+            }
+        }
+
+        .friends-chat-container {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 1.25rem 0 0 1rem;
+
+            &__header {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                &--text-wrapper {
+                    font-size:17px;
+                    font-weight:600;
+                    color: $secondary-text;                    
+                }
+
+                &--etc-option-wrapper{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .icon-wrapper {
+                        padding:1rem;
+                        border-radius:40px;
+                        margin-left:0.5rem;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            background-color: $white-grey-2;
+                        }
+                        .share-icon {
+
+                            &.video {
+                                background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/FmlBQnWPiFF.png);
+                                background-size: 25px 303px;
+                                background-repeat: no-repeat;
+                                display: inline-block;
+    
+                                width: 16px;
+                                height: 16px;
+                                background-position: 0 -209px;
+                            }
+    
+                            &.search {
+                                background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/C8h7srd1X18.png);
+                                background-size: 25px 896px;
+                                background-repeat: no-repeat;
+                                display: inline-block;
+    
+                                width: 16px;
+                                height: 16px;
+                                background-position: 0 -702px;
+    
+                                
+                            }
+    
+                            &.more {
+                                background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/C8h7srd1X18.png);
+                                background-size: 25px 896px;
+                                background-repeat: no-repeat;
+                                display: inline-block;
+    
+                                width: 16px;
+                                height: 16px;
+                                background-position: 0 -685px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__item-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                border-radius:5px;
+                width:100%;
+                transition:all .4s ease-in-out;
+
+                &:hover {
+                    background-color: #cecfd1;
+                }
+
+                &__avatar-wrapper {
+                    position: relative;
+                    margin:1rem;
+
+                    &__avatar {
+                        border-radius:40px;
+                        height:25px;
+                        width:25px;                        
+                        position:relative;    
+                    }
+    
+                    &__active-icon{
+                        position: absolute;
+                        background-color:green;
+                        border-radius: 40px;
+                        border: solid 1px $white;
+                        height: 8px;
+                        width: 8px;
+                        bottom:0;
+                        right:0;
+                    }
+                }
+
+                
+                &__name {
+                    font-size:15px;
+                    font-weight:500;
+                }
+            }
+        }
+    }
 }

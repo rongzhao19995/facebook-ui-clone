@@ -15,17 +15,18 @@ export const HeaderOptionGroup = () => {
 
     const selectOption = (opt) => {
       console.log(`selected ${opt}`);
-      let updateList = intialList.map( (item, index) => {
-        if (opt === index ) {
-          return item = true;
-        }
-        return item = false;
-      } );
-      setActive([
-        ...updateList
-      ])
-    }
+      // let updateList = intialList.map( (item, index) => {
+      //   if (opt === index ) {
+      //     return item = true;
+      //   }
+      //   return item = false;
+      // } );
+    
+      setActive(intialList => 
+        intialList.map((item, idx) =>  item = opt === idx )
+        )
 
+    }
   return (
     <div className="items-container">
       <div className={`items-container__item ${active[0] ? "active" : ""}`} onClick={()=> selectOption(0)} >

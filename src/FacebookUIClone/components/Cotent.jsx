@@ -1,4 +1,5 @@
 import React from "react";
+import { GoPrimitiveDot } from "react-icons/go";
 
 const ContentLeft = () => {
   return (
@@ -29,6 +30,9 @@ const ContentLeft = () => {
             alt="avatar"
           />
           <div className="item-container__item-wrapper__name">Friends</div>
+          {/* <span className="item-container__item-wrapper__name--notification">
+              <GoPrimitiveDot size="12" /> 5 new
+            </span> */}
         </div>
         <div className="item-container__item-wrapper">
           <img
@@ -184,7 +188,231 @@ const ContentCenter = () => {
 };
 
 const ContentRight = () => {
-  return <div className="content__right">RIGHT</div>;
+  return (
+    <div className="content__right">
+      <div className="friends-req-container">
+        <div className="friends-req-container__header">
+          <div className="friends-req-container__header--text-wrapper">
+            Friend Requests
+          </div>
+          <div className="friends-req-container__header--edit-wrapper">
+            See All
+          </div>
+        </div>
+        <div className="friends-req-container__item-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/s480x480/79515135_10111007623880301_5111576226921709568_o.jpg?_nc_cat=1&ccb=2&_nc_sid=7206a8&_nc_ohc=KqETJlwbn_8AX_sqiob&_nc_ht=scontent.fkul14-1.fna&tp=7&oh=eb9e441c4166cb43c72139ca5687a89f&oe=5FBAFE6F"
+            className="friends-req-container__item-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-req-container__item-wrapper__info-wrapper">
+            <div className="friends-req-container__item-wrapper__info-wrapper__top-section">
+              <div className="friends-req-container__item-wrapper__info-wrapper__top-section__name">Mark Zuckerberg</div>
+              <div className="friends-req-container__item-wrapper__info-wrapper__top-section__week">1w</div>
+            </div>
+            <div className="friends-req-container__item-wrapper__info-wrapper__btm-section">
+              <button className="friends-req-container__item-wrapper__info-wrapper__btm-section__cfm">Confirm</button>
+              <button className="friends-req-container__item-wrapper__info-wrapper__btm-section__delete">Delete</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div className="friends-birth-container">
+        <div className="friends-birth-container__header">
+        <div className="friends-birth-container__header__text-wrapper">
+          Birthdays
+        </div>
+      </div>
+        <div className="friends-birth-container__item-wrapper">
+          <div className="friends-birth-container__item-wrapper__icon"></div>
+          <div className="friends-birth-container__item-wrapper__text">
+            <span><strong>May Shian</strong> and <strong><span class="tojvnm2t a6sixzi8 abs2jz4q pq6dq46d t1p8iaqh k5wvi7nf q3lfd5jv pk4s997a bipmatt0 cebpdrjk qowsmv63 owwhemhu dp1hu0rb dhp61c6y iyyx5f41"><span class="lrazzd5p nhd2j8a9 oo9gr5id">2 others</span></span></strong> have birthdays today.</span>
+          </div>
+        </div>
+      </div>
+      <div className="friends-chat-container">
+        <div className="friends-chat-container__header">
+          <div className="friends-chat-container__header--text-wrapper">Contact</div>
+          <div className="friends-chat-container__header--etc-option-wrapper">
+            <div className="icon-wrapper"><div className="share-icon video"></div></div>
+            <div className="icon-wrapper"><div className="share-icon search"></div></div>
+            <div className="icon-wrapper"><div className="share-icon more"></div></div>
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/68607264_2445884725688321_7842344462675083264_n.jpg?_nc_cat=108&ccb=2&_nc_sid=7206a8&_nc_ohc=dHtjqtyR7lwAX8CYNLV&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=d2055dcb29acb2b94c6e307536574f85&oe=5FB9B47C"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+          Yi Sheng
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/40814679_10205155072474520_3125794884980572160_o.jpg?_nc_cat=110&ccb=2&_nc_sid=7206a8&_nc_ohc=xxceeFh9pOMAX8l7tSR&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=a5ecfa36e0ddc61f83ef74d35ea31817&oe=5FBC3DFB"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Kian Wah Wong
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/61632259_10206301484174044_7252428836258709504_n.jpg?_nc_cat=106&ccb=2&_nc_sid=7206a8&_nc_ohc=lf1VdCZlBNAAX9eCzw7&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=b7c41fe7b308835f419402a83ddace9d&oe=5FBC927B"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Dave
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/70427988_2927530653924767_5320024780936577024_o.jpg?_nc_cat=103&ccb=2&_nc_sid=7206a8&_nc_ohc=szhGAs4MIpsAX-EXxTh&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=a67b692f75721771d92ba3d37672f402&oe=5FBBAFEE"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Luiz Santos
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/21557534_1518690981500596_8572198999011005895_n.jpg?_nc_cat=106&ccb=2&_nc_sid=7206a8&_nc_ohc=8CL75kOp7NYAX9cIcm_&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=bcbbdb7fdfd99a399ce28747a10ddcef&oe=5FBAE090"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Choong Han Sheng
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/21558712_1787723731241168_2740960774792782481_n.jpg?_nc_cat=107&ccb=2&_nc_sid=7206a8&_nc_ohc=roaiatRfbf4AX-a5whd&_nc_oc=AQk-pBmLrN15fDBVKxPrT0s-Gxcycs20AaDJCL-_K5Oun1qVb34W5FTGMeh1aLwhG9A&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=dfad7abda1ce11439d3596f6ec07f0fa&oe=5FBB43E8"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Zharif Mashan
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/c0.0.74.74a/p74x74/32253750_10156279571178486_4505037101384859648_o.jpg?_nc_cat=106&ccb=2&_nc_sid=7206a8&_nc_ohc=5kBkplkBxcMAX8KnS1u&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=d2fda07a2a20d85bae5702d552b99786&oe=5FBB81DD"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Chee Keong
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/39454378_10214444152870908_5505930314335125504_n.jpg?_nc_cat=109&ccb=2&_nc_sid=7206a8&_nc_ohc=-a5E4awLSRAAX91WTYq&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=ad553e4cf3e38e3ac3062d6428acad08&oe=5FB8E314"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Phang Steven
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/58613022_2619802894712816_6539731596772114432_n.jpg?_nc_cat=110&ccb=2&_nc_sid=7206a8&_nc_ohc=BXDiWVyZbK8AX9-vkvU&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=39045527f582c057f84a48b8cc63b1eb&oe=5FBBFAF4"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Angela Kang
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t31.0-1/cp0/p74x74/30073438_10156271888256382_5121367977053865689_o.jpg?_nc_cat=100&ccb=2&_nc_sid=7206a8&_nc_ohc=DI6x9uS2DmsAX-5mOaV&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=da9bfb5be3382080703f736f4a6699c1&oe=5FBAED8F"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Aaron Ng
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/984243_10152866724809100_4811767716921579548_n.jpg?_nc_cat=100&ccb=2&_nc_sid=7206a8&_nc_ohc=gfB_OoN5LWMAX9JP7Ry&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=4ad4850a7c7fc0ed8ce8636a53fbd136&oe=5FB8D4FA"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Aaron Ng
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/109535218_3429231003793578_8174008427838799194_n.jpg?_nc_cat=108&ccb=2&_nc_sid=7206a8&_nc_ohc=OrCopXyF9IAAX8eV4c0&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=240c804195d25efa18ff8ad7f13ae77c&oe=5FB998B4"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Aaron Ng
+          </div>
+        </div>
+        <div className="friends-chat-container__item-wrapper">
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper">
+          <img
+            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/120194859_3202577769870019_6956422763127166630_n.jpg?_nc_cat=106&ccb=2&_nc_sid=7206a8&_nc_ohc=B7lE-wUDSqUAX_DI6Ra&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=c5c59eca1d01f12e9a2e32f38249e8d3&oe=5FBBCAE8"
+            className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
+            alt="avatar"
+          />
+          <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
+          </div>
+          <div className="friends-chat-container__item-wrapper__name">
+            Steven Black
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
 };
 
 export default function Cotent() {
