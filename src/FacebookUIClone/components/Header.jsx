@@ -28,7 +28,7 @@ const HeaderRight = () => {
     <div className="header__right">
       <div className="avatar-wrapper">
         <img
-          src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/p100x100/83799814_10216337728137533_3515890250326999040_o.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=XcLOFbPQ7ewAX_xN6JU&_nc_ht=scontent.fkul14-1.fna&tp=6&oh=b612288712dc10d3b6a930049ccd7825&oe=5FAEB06B"
+          src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-1/p320x320/124354962_10218720359021816_6353348838620994993_o.jpg?_nc_cat=110&ccb=2&_nc_sid=7206a8&_nc_ohc=6e6B7tHtFzoAX84aCz2&_nc_ht=scontent.fkul16-1.fna&tp=6&oh=6f4cbcbc701fb6a741aa08e7b5dc35fe&oe=5FD45B4F"
           className="avatar-wrapper__avatar"
           alt="avatar"
         />

@@ -1,5 +1,8 @@
 import React from "react";
-import { GoPrimitiveDot } from "react-icons/go";
+import { Stories } from "./Stories";
+import { AddPost } from "./AddPost";
+import { Room } from "./Room";
+import { PostContainer } from "./PostContainer";
 
 const ContentLeft = () => {
   return (
@@ -7,7 +10,7 @@ const ContentLeft = () => {
       <div className="item-container">
         <div className="item-container__item-wrapper">
           <img
-            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/p100x100/83799814_10216337728137533_3515890250326999040_o.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=XcLOFbPQ7ewAX_xN6JU&_nc_ht=scontent.fkul14-1.fna&tp=6&oh=b612288712dc10d3b6a930049ccd7825&oe=5FAEB06B"
+            src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-1/p320x320/124354962_10218720359021816_6353348838620994993_o.jpg?_nc_cat=110&ccb=2&_nc_sid=7206a8&_nc_ohc=6e6B7tHtFzoAX84aCz2&_nc_ht=scontent.fkul16-1.fna&tp=6&oh=6f4cbcbc701fb6a741aa08e7b5dc35fe&oe=5FD45B4F"
             className="item-container__item-wrapper__avatar"
             alt="avatar"
           />
@@ -184,7 +187,15 @@ const ContentLeft = () => {
 };
 
 const ContentCenter = () => {
-  return <div className="content__center">CENTER</div>;
+  return <div className="content__center">
+    <div className="content_center_top-section">
+      <Stories />
+      <AddPost />
+      <Room />
+      <PostContainer />
+    </div>
+    <div className="content_center_top-section"></div>
+  </div>;
 };
 
 const ContentRight = () => {
@@ -227,7 +238,7 @@ const ContentRight = () => {
         <div className="friends-birth-container__item-wrapper">
           <div className="friends-birth-container__item-wrapper__icon"></div>
           <div className="friends-birth-container__item-wrapper__text">
-            <span><strong>May Shian</strong> and <strong><span class="tojvnm2t a6sixzi8 abs2jz4q pq6dq46d t1p8iaqh k5wvi7nf q3lfd5jv pk4s997a bipmatt0 cebpdrjk qowsmv63 owwhemhu dp1hu0rb dhp61c6y iyyx5f41"><span class="lrazzd5p nhd2j8a9 oo9gr5id">2 others</span></span></strong> have birthdays today.</span>
+            <span><strong>Siriluk Kruepat</strong> and <strong><span class="tojvnm2t a6sixzi8 abs2jz4q pq6dq46d t1p8iaqh k5wvi7nf q3lfd5jv pk4s997a bipmatt0 cebpdrjk qowsmv63 owwhemhu dp1hu0rb dhp61c6y iyyx5f41"><span class="lrazzd5p nhd2j8a9 oo9gr5id">2 others</span></span></strong> have birthdays today.</span>
           </div>
         </div>
       </div>
@@ -243,14 +254,14 @@ const ContentRight = () => {
         <div className="friends-chat-container__item-wrapper">
           <div className="friends-chat-container__item-wrapper__avatar-wrapper">
           <img
-            src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-1/cp0/p74x74/68607264_2445884725688321_7842344462675083264_n.jpg?_nc_cat=108&ccb=2&_nc_sid=7206a8&_nc_ohc=dHtjqtyR7lwAX8CYNLV&_nc_ht=scontent.fkul14-1.fna&tp=27&oh=d2055dcb29acb2b94c6e307536574f85&oe=5FB9B47C"
+            src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/31944286_788152278055369_6584830071935074304_o.jpg?_nc_cat=102&ccb=2&_nc_sid=09cbfe&_nc_ohc=s5F0PMrmnLwAX-ggtU5&_nc_ht=scontent.fkul16-1.fna&oh=2b16a5cfc3a9b0eda08a54aa40330d98&oe=5FD66E83"
             className="friends-chat-container__item-wrapper__avatar-wrapper__avatar"
             alt="avatar"
           />
           <div className="friends-chat-container__item-wrapper__avatar-wrapper__active-icon"></div>
           </div>
           <div className="friends-chat-container__item-wrapper__name">
-          Yi Sheng
+          Siriluk Kruepat
           </div>
         </div>
         <div className="friends-chat-container__item-wrapper">

@@ -133,7 +133,12 @@
 
     }
 
-    &__center {}
+    &__center {
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding-bottom: 150px;
+    }
     
     &__right {
         padding-right:1.5rem;
@@ -285,7 +290,15 @@
                 flex-direction: row;
                 justify-content: start;
                 align-items: center;
-                padding: 2rem 0rem;
+                border-radius: 5px;
+                padding: 1rem 0;
+                margin-bottom: .5rem;
+                margin-top: .5rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #cecfd1;
+                }
 
                 &__icon {
                     background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/CkM-umrun3d.png);
@@ -352,7 +365,7 @@
                                 background-size: 25px 303px;
                                 background-repeat: no-repeat;
                                 display: inline-block;
-    
+                                filter: $filter-secondary-icon;
                                 width: 16px;
                                 height: 16px;
                                 background-position: 0 -209px;
@@ -363,7 +376,7 @@
                                 background-size: 25px 896px;
                                 background-repeat: no-repeat;
                                 display: inline-block;
-    
+                                filter: $filter-secondary-icon;
                                 width: 16px;
                                 height: 16px;
                                 background-position: 0 -702px;
@@ -376,7 +389,7 @@
                                 background-size: 25px 896px;
                                 background-repeat: no-repeat;
                                 display: inline-block;
-    
+                                filter: $filter-secondary-icon;
                                 width: 16px;
                                 height: 16px;
                                 background-position: 0 -685px;
